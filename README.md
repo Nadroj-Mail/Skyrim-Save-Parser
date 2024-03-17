@@ -3,10 +3,15 @@
 
 ## What's been done:
 
- Player Name
- Player Race
- Save File Time
- Player Location
- Player level
- Player Sex
- Needed EXP
+Player Name   | Player Race
+------------- | -------------
+Save File Time  | Player Location
+Player Level  | Player Sex
+Needed EXP    | 
+
+
+## What needs to be done:
+
+ A Feck ton
+
+##### nadroj
