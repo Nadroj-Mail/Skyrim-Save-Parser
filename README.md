@@ -14,4 +14,12 @@ Needed EXP    |
 
  A Feck ton
 
+ ## Usefull Recources
+
+ Format Conversion Table = https://en.uesp.net/wiki/Skyrim_Mod:File_Format_Conventions
+
+ Structure of the Save = http://www.uesp.net/wiki/Tes5Mod:Save_File_Format
+
+**Note**: Only Tested with SE version of Skyrim saves.
+
 ##### nadroj
