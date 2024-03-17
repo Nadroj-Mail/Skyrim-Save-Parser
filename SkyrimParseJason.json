@@ -1,5 +1,19 @@
 {
-    "PlayerName": "Van Gaaito",
-    "level": 56,
-    "gold": 23958
+    "general_player_stats": [
+        {
+            "player_name": "Atreyu"
+        },
+        {
+            "player_race": "DarkElf"
+        },
+        {
+            "player_level": 35
+        },
+        {
+            "player_sex": "Male"
+        }
+    ],
+    "file_save_time": "009.56.41",
+    "player_location": "Dustman's Cairn",
+    "needed_exp": 950.0
 }
