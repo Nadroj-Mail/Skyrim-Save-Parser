@@ -92,10 +92,17 @@ def parse_skyrim_save_to_json(ess_file_path, json_file_path):
         print(needed_exp)
         
         # Read the player gold (int)
-        save_file.read(12)  # Skipping unknown bytes
+        save_file.read(4)  # Skipping unknown bytes
         gold = struct.unpack('<f', save_file.read(4))[0]
         
         
+        #wsting_char = b"\xff\x15\x15\x0e\xff"
+        #readable_string = int.from_bytes(wsting_char, byteorder="big", signed=False)
+        #readable_string = wsting_char.decode("windows-1252")
+        #bytes_pairs = [wsting_char[i:i+2] for i in range(0, len(wsting_char), 2)]
+        #readable_string = "".join([bytes_pairs.decode("utf-16le") for bytes_pairs in bytes_pairs])
+        #print(readable_string)
+
         # Dictionary with the extracted data
         skyrim_data = {
             "general_player_stats": [
@@ -107,7 +114,7 @@ def parse_skyrim_save_to_json(ess_file_path, json_file_path):
             "file_save_time": file_save_time, # Format Hours; Minutes; Seconds
             "player_location": player_location, # name of location
             "needed_exp": needed_exp,
-            #"gold": gold
+            "gold": gold
         }
         
         # Write the data to a JSON file
